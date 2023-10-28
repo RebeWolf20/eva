@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollView"
+    android:background="@color/black"
+    >
+
+    <ScrollView
+        android:layout_width="379dp"
+        android:layout_height="727dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/dias_de_sol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Descripcion"
+                android:onClick="Seleccion"
+                app:srcCompat="@mipmap/sky2" />
+
+            <ImageButton
+                android:id="@+id/renacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@String/Descripcion"
+                android:onClick="Seleccion"
+                app:srcCompat="@mipmap/sky4" />
+
+            <ImageButton
+                android:id="@+id/haciendo_amigos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@String/Descripcion"
+                android:onClick="Seleccion"
+                app:srcCompat="@mipmap/sky5" />
+
+            <ImageButton
+                android:id="@+id/Tomando_Selfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@String/Descripcion"
+                android:onClick="Seleccion"
+                app:srcCompat="@mipmap/sk6" />
+
+            <ImageButton
+                android:id="@+id/Escapando_del_dragon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@String/Descripcion"
+                android:onClick="Seleccion"
+                app:srcCompat="@mipmap/krill" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

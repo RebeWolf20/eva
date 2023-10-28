@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBox"
+    android:background="@mipmap/luna">
+
+    <TextView
+        android:id="@+id/txv_Seleccionar"
+        android:layout_width="242dp"
+        android:layout_height="64dp"
+        android:text="¿Qué eres?"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="382dp"
+        android:layout_height="147dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_animal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animal"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_validar"
+        android:layout_width="256dp"
+        android:layout_height="53dp"
+        android:text="validar"
+        android:onClick="onClickbutton"
+        app:layout_constraintBottom_toTopOf="@+id/txv_resul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <TextView
+        android:id="@+id/txv_resul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="resultado"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="Menu"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

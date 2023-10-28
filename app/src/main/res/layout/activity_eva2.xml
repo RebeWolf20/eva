@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eva_2"
+    android:background="@mipmap/carretera">
+
+    <TextView
+        android:id="@+id/tx_menu"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:text="Menu Principal"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="413dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_mixto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Btn_mixto"
+                android:text="Mixto"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ScrollView"
+                android:text="ScrollView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Btn_spinner"
+                android:text="Spinner" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ReciclerAndCard"
+                android:text="ReciclerAndCard" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <Button
+                android:id="@+id/btn_CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="CheckBox"
+                android:text="CheckBox" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:onClick="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@mipmap/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
